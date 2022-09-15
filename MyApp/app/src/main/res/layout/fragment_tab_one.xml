@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragmentbackground">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/controlLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblFinalMeterReading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/grid_no"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtGridNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:digits="0123456789"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/color_272F38"
+                            android:textColorHint="@color/color_747474"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblLoadKW"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/map_id"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtMapId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/color_272F38"
+                            android:textColorHint="@color/color_747474"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Unique Id"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtUniqueId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:inputType="textCapCharacters"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/color_272F38"
+                            android:textColorHint="@color/color_747474"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:text="ULB P. Id"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtULBId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/color_272F38"
+                            android:textColorHint="@color/color_747474"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/mobile_no"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:maxLength="10"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="साक्षात्कार"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="परिणाम कोड"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerParinamCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytParinamCodeOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="परिणाम कोड़ अन्य"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtParinamCodeOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytNextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="अगला साक्षात्कार दिनांक"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/txtNextDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="3dp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/nextDate"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_calender" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="माप का आधार"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerMaapAadhar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/parcel_kramank"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtParcelName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="उन पार्सलो के लिए जो नक्शे मे नही है "
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtParcelNameIfNotMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/property_no"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiSankhya"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="खसरा नंबर"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtKhasraNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="सामान्य जानकारी"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="संपत्ति का पता"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiAdress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="रोड / स्ट्रीट क्र."
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiRoadKramank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="रोड / स्ट्रीट का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiRoadName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="मोहल्ला/कॉलोनी/पारा का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiMohlla"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="थाना"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiThana"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="लैंडमार्क"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiLandmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="पिनकोड"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:maxLength="6"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Property Tax Payment Information"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/blue_header"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/blue_header"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Fill By Surveyor"
+                            android:textColor="@color/white"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/blue_header"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Fill By Corp."
+                            android:textColor="@color/white"></TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Last Paym. Year"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/txtPayYearSurveyor"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+                        <EditText
+                            android:id="@+id/txtLastYearPayCorp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Last Paym. Date"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/txtPayDateSurveyor"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+                        <EditText
+                            android:id="@+id/txtPayDateCorp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Reciept No."
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/txtRecieptNoSurveyor"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+                        <EditText
+                            android:id="@+id/txtRecieptNoCorp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Paid Tax Amount"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/txtPaidTextAmount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="11dp"></EditText>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal|bottom">
+
+
+            <Button
+                android:id="@+id/btnSaveInfo"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight=".3"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/proceed"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/utilityitemCL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_round">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txtManjilRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtYearRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtBhawanCodeRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtFloorRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtAreaRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txtUpyogRec"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

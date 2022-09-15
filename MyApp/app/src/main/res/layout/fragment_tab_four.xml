@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragmentbackground">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/controlLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="छूट का प्रकार"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="क्या आपको (संपत्ति मालिक) धारा 136 के अंतर्गत कोई छूट प्राप्त है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgDiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="है"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नही है"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytDiscountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerchootPrakar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytOtherChootPrakarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="अन्य छूट प्रकार का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtOtherChootPrakarName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="क्या यह संपत्ति एतिहासिक धरोहर के अंतर्गत आ सकती है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAtihasikDharohar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="हाँ"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नही"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:text="जल प्रदाय"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="संपत्ति मे उपलब्ध जल प्रदाय की व्यवस्था"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgJalPradaye"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="निजी"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="सार्वजनिक"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="जल प्रदाय का स्त्रोत्र"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerJalSrotra"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img12"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="यदि नगर निगम जल है तो पाइप की मोटाई"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPipeMotai"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img13"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="प्रदायकी अवधि प्रतिदिन"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerAvdhi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img14"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="पाइप लाइन मे प्रैशर की स्थिति"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPressureStithi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img15"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="वाटर मिटर लगा है"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerWaterMeter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img16"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="यदि वाटर मिटर लगा है तो"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerWaterMeterCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img17"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="रैन वाटर हार्वेस्टिंग की व्यवस्था"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgRainWaterHarwesting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="है"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नहीं है"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="इसका क्या उपयोग है"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerRainWaterUses"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img18"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="मल निकासी हेतु कनैक्शन है या नही"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgMalNikasiConnection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="है"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नहीं है"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="सिवेज नेटवर्क नही होने की स्थिति मे वेकल्पिक व्यवस्था"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerSewageManage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img19"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="शोचलाय की संख्या"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtToiletCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="मल निकासी का प्रकार"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerMalNikasiType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img20"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="भवन परिसर मे व्रक्षो की संख्या"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtTreeCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:maxLength="3"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="पानी टंकी"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgPaniTanki"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="है"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नहीं है"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="दुपहिया वाहनो की संख्या"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerTwoWheeler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img21"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="चार पहिया वाहनो की संख्या"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerFourWheeler"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img22"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="भवन अनुज्ञा ली गयी है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgBhawanAnugya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="हाँ ली गयी है"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नहीं ली गयी है"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/firstpropertyimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cameraimgbackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/propertyimageoriginal1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/propertyimage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_camera" />
+
+                            <TextView
+                                android:id="@+id/propertytext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Property Image"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/firstSignatureImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/cameraimgbackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/signatureimageoriginal1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/signatureimage1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_camera" />
+
+                            <TextView
+                                android:id="@+id/signaturetext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Signature"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal|bottom">
+
+
+            <Button
+                android:id="@+id/btnSaveInfo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight=".3"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</layout>

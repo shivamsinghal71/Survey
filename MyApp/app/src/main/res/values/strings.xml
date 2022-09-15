@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="download_consumers">Press <font color="#F44336">DOWNLOAD</font> button then your working list will be downloaded on your mobile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="proceed">Save &amp; Next</string>
+    <string name="start_survey">Start Survey</string>
+    <string name="click_sign">Click Here For Signature</string>
+    <string name="submit">Submit</string>
+    <string name="str_instruction">Your Data Has Been Stored Successfully</string>
+    <string name="move_Search_Consumer">Start New Survey</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="enter_both">Enter Login ID And Password</string>
+    <string name="enter_login_id">Enter Login ID</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="somethingwentwrong">Something Went Wrong</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="select_dist">जिला सेलेक्ट करे</string>
+    <string name="select_ulb">यूएलबी सेलेक्ट करे</string>
+    <string name="select_zone">जॉन सेलेक्ट करे</string>
+    <string name="select_ward">वार्ड सेलेक्ट करे</string>
+    <string name="enter_pincode">पिनकोड डालें</string>
+    <string name="enter_correct_pincode">सही पिनकोड डालें</string>
+    <string name="enter_correct_email">सही ईमेल आईडी डालें</string>
+    <string name="enter_parcel_no">पार्सल क्र. डालें</string>
+    <string name="enter_grid_no">Grid No. डालें</string>
+    <string name="enter_map_id">Map Id डालें</string>
+    <string name="enter_property_no">संपत्ति संख्या डालें</string>
+    <string name="enter_respondent_name">उत्तरदाता का नाम डालें</string>
+    <string name="enter_mobile_no">मोबाइल नंबर डालें</string>
+    <string name="correct_mobile_no">सही मोबाइल नंबर डालें</string>
+    <string name="enter_valid_credentials">User Not Found</string>
+    <string name="data_not_available">No Data Available For  Upload</string>
+    <string name="grid_no">Grid No. <p><font color="red">*</font></p></string>
+    <string name="map_id">Map Id <p><font color="red">*</font></p></string>
+    <string name="mobile_no">मोबाइल नंबर <p><font color="red">*</font></p></string>
+    <string name="parcel_kramank">पार्सल क्र. <p><font color="red">*</font></p></string>
+    <string name="property_no">संपत्ति संख्या <p><font color="red">*</font></p></string>
+
+
+</resources>

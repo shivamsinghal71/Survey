@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragmentbackground">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/controlLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="संपत्ति विवरण (संपत्ति मालिक के लिए)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="क्या यह संपत्ति नगर निगम के रेकॉर्ड मे दर्ज है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgSampattiNagarNigamRecord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/red"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="हाँ"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:id="@+id/green"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नही"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:id="@+id/yellow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:text="मालूम नहीं"
+                            android:textSize="11sp" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="उत्तरदाता का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtRespondentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="आप क्या है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupAapKyaHai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="संपत्ति मालिक"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="किरायेदार"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="अन्य"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytRista"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="यदि अन्य तो संपत्ति के मालिक/किराएदार/अन्य से रिश्ता"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerRista"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytOtherRelationName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="अन्य रिश्ते का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtOtherRelationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="संपत्ति के मालिकाना हक का वर्गिकरण"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerVargikaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytOtherVargikaranName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="अन्य वर्गिकरण का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtOtherVargikaranName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="भूमि का प्रकार"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerBhumiPrakar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytOtherBhumiPrakarName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="अन्य भूमि प्रकार का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtOtherBhumiPrakarName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="श्री/श्रीमति/कुमारी "
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtShriKumari"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="पति/पिता "
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtPati"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="मकान क्र."
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtMakanKramank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="रोड/स्ट्रीट क्र."
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtRoadKramank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="रोड/स्ट्रीट का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtRoadName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="मोहल्ला/कॉलोनी/पारा का नाम"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtMohllaName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="थाना"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtThanaName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="शहर"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSeharName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="प्रदेश"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtPradeshName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="पिनकोड"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtPincodeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="ईमेल आईडी"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtEmailID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#C3E4E6E6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="क्या संपत्ति का मालिक आयकरदाता है"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgAaykardaata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="हाँ"
+                            android:textSize="11sp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="नही"
+                            android:textSize="11sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="घर के कुल सदस्यो की संख्या"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblFinalMeterReading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="2dp"
+                            android:text="स्त्री"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtFemale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:maxLength="3"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_nonselected"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblLoadKW"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="2dp"
+                            android:text="पुरुष"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/txtMale"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:background="@null"
+                            android:gravity="start|center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:maxLength="3"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingStart="5dp"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="आपको मिलकर कितने परिवार समूह इस संपत्ति मे रहते है"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPrivarSamuhNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgPrivarSamuhNo"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="उपरोक्त मे कितने परिवार समूह , किरायेदार है"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerPrivarSamuhKirayedar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgPrivarSamuhKirayedar"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="संपत्ति का उपयोग"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerSampattiUpyog"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytSampattiUpyogIfOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_round"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight=".9"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="यदि 1 के अलावा उत्तर है तो संपत्ति उपयोग"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerSampattiUpyogIfOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-5dp"
+                            android:background="@null" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="0dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight=".1"
+                        android:src="@drawable/ic_arrow_down_expand" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lytSampattiUpyogIfOneRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblSampattiUpyogIfOneRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiUpyogIfOneRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytSampattiUpyogIfOneRemarkTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblSampattiUpyogIfOneRemarkTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiUpyogIfOneRemarkTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytSampattiUpyogIfOneRemarkThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/lblSampattiUpyogIfOneRemarkThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtSampattiUpyogIfOneRemarkThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="भवन निर्माण का वर्ष"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtBhawanNirmanYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout_nonselected"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="भूमि का कुल क्षेत्रफल (SqF.)"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <EditText
+                        android:id="@+id/txtBhumiArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal|bottom">
+
+
+            <Button
+                android:id="@+id/btnSaveInfo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight=".3"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/proceed"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

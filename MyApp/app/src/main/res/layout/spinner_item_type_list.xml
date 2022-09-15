@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/dropDownItemStyle"
+    android:textAppearance="?android:attr/textAppearanceSmallPopupMenu"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:textSize="13sp"
+    android:gravity="left"
+    android:textColor="@color/black"
+    android:paddingStart="15dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    />

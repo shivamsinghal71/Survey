@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragmentbackground">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/utilityitemCL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_round"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_round"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="55dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight=".9"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:text="मंजिल/तल का कोड"
+                                    android:textColor="@color/black"
+                                    android:textSize="11sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerManjilTalCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="-5dp"
+                                    android:background="@null" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img7"
+                                android:layout_marginEnd="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_weight=".1"
+                                android:src="@drawable/ic_arrow_down_expand" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/layout_nonselected"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lblOldSealNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="5dp"
+                                android:text="निर्माण का वर्ष"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/txtNirmanYear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="3dp"
+                                android:background="@null"
+                                android:gravity="start|center"
+                                android:hint=""
+                                android:imeOptions="actionNext"
+                                android:maxLength="4"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingTop="3dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/color_272F38"
+                                android:textColorHint="@color/color_747474"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_round"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="55dp"
+                                android:layout_marginEnd="2dp"
+                                android:layout_weight=".9"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:text="भवन का कोड"
+                                    android:textColor="@color/black"
+                                    android:textSize="11sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerBhawanCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="-5dp"
+                                    android:background="@null" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img8"
+                                android:layout_marginEnd="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_weight=".1"
+                                android:src="@drawable/ic_arrow_down_expand" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_round"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="55dp"
+                                android:layout_weight=".9"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:text="फ्लोर का कोड"
+                                    android:textColor="@color/black"
+                                    android:textSize="11sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerFloorCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="-5dp"
+                                    android:background="@null" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img9"
+                                android:layout_marginEnd="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_weight=".1"
+                                android:src="@drawable/ic_arrow_down_expand" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/layout_nonselected"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="5dp"
+                                android:text="छेत्रफल (SqF.)"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                            <EditText
+                                android:id="@+id/txtArea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="3dp"
+                                android:background="@null"
+                                android:gravity="start|center"
+                                android:hint=""
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingTop="3dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/color_272F38"
+                                android:textColorHint="@color/color_747474"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gradient_round"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="55dp"
+                                android:layout_weight=".9"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="3dp"
+                                    android:text="उपयोग"
+                                    android:textColor="@color/black"
+                                    android:textSize="11sp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerUpyog"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="-5dp"
+                                    android:background="@null" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/img10"
+                                android:layout_marginEnd="5dp"
+                                android:layout_width="0dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:layout_weight=".1"
+                                android:src="@drawable/ic_arrow_down_expand" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/add_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Add To List"
+                        android:textColor="@color/white"></TextView>
+
+                </LinearLayout>
+
+
+
+                <HorizontalScrollView
+                    android:visibility="gone"
+                    android:id="@+id/scrollview_rec"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:padding="5dp"
+                                android:text="मंजिल"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="@color/white"></TextView>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="वर्ष"
+                                android:textColor="@color/white"></TextView>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="भवन कोड़"
+                                android:textColor="@color/white"></TextView>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="फ्लोर"
+                                android:textColor="@color/white"></TextView>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="छेत्रफल"
+                                android:textColor="@color/white"></TextView>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_header"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="उपयोग"
+                                android:textColor="@color/white"></TextView>
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/bhawan_vargikaran_rec"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/controlLayout"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal|bottom">
+
+
+            <Button
+                android:id="@+id/btnSaveInfo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight=".3"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="@string/proceed"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>

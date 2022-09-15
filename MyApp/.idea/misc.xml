@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable-v24/button_bg.xml" value="0.189" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/blue_header.xml" value="0.1615" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/border.xml" value="0.1615" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/button_bg.xml" value="0.189" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/cameraimgbackground.xml" value="0.156" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/et_curve_bg.xml" value="0.189" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/gradient_round.xml" value="0.1615" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/ic_arrow_down_expand.xml" value="0.1615" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/ic_eye_close.xml" value="0.189" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/ic_eye_open.xml" value="0.189" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/layout_nonselected.xml" value="0.1615" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/drawable/layout_selected.xml" value="0.156" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/activity_download.xml" value="0.22395833333333334" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/activity_login.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/activity_main.xml" value="0.14837662337662338" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/activity_property_list.xml" value="0.22395833333333334" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/activity_splash.xml" value="0.22395833333333334" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/bhawan_vargikaran_rec_layout.xml" value="0.23697916666666666" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_signature.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_survey_complete.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_tab_four.xml" value="0.2" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_tab_one.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_tab_three.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/fragment_tab_two.xml" value="0.264" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/property_list_rec.xml" value="0.23697916666666666" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/spinner_item_type.xml" value="0.23802083333333332" />
+        <entry key="..\:/Android/MyApp/app/src/main/res/layout/spinner_item_type_list.xml" value="0.23697916666666666" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/border.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/ic_flash_auto.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/ic_flash_off.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/ic_flash_on.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/ic_menu1.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/layout_nonselected.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/drawable/shape_rectangle.xml" value="0.156" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_camera.xml" value="0.1" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_login.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_signature.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_splash.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/activity_visited_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/app_bar_home.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/bhawan_vargikaran_rec_layout.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/camera_ui_container.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/content_main.xml" value="0.23697916666666666" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/dialog_simple.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_camera.xml" value="0.1" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_signature.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_start_survey.xml" value="0.176" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_sync_out.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_tab_four.xml" value="0.25" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_tab_one.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_tab_three.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_tab_two.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_visit_details.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/fragment_visited_data.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/layout_dialog_h.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/nav_header_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/spinner_item_type_list.xml" value="0.23802083333333332" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/layout/visited_list_rec.xml" value="0.23697916666666666" />
+        <entry key="..\:/Shivam Personal/MyApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.178515625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
